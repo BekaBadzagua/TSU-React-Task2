@@ -1,23 +1,19 @@
-import logo from './logo.svg';
+import React from 'react'
+import Posts from './components/Posts'
+import Post from './components/Post'
+import { Switch, Route, Redirect } from 'react-router-dom'
 import './App.css';
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <p>სტუდენტი: ბექა ბაძაღუა</p>
+      <Switch>
+        <Route path="/posts/:id" exact={true} component={Post}></Route>
+        <Route path="/" exact={true} ><Posts /></Route>
+        <Redirect to="/" />
+      </Switch>
     </div>
   );
 }

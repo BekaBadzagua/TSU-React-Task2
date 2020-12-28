@@ -1,38 +1,58 @@
 .App {
+  width: 40%;
+  margin: auto;
+}
+
+.PostWrapper {
+  background-color: antiquewhite;
+  margin: 20px 0;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.PostWrapper h1 {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.PostWrapper a {
+  color:#000;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.PostWrapper a:hover {
+  color:red;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Comments {
+  background-color: #b1b0b0;
+  padding: 20px
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.comment{
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  margin: 10px 0; 
 }
 
-.App-link {
-  color: #61dafb;
+.comment h1{
+  font-size: 20px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.comment h2{
+  font-size: 18px
+}
+.comment p{
+  font-size: 16px;
+}
+.inputWrapper {
+  margin: 20px 0  40px;
+}
+.inputWrapper input:first-child{
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+.inputWrapper input:last-child{
+  width: 150px;
+  font-size: 16px;
+  float: right;
 }
